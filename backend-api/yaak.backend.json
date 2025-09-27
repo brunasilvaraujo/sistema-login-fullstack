@@ -1,0 +1,141 @@
+{
+  "yaakVersion": "2025.5.6",
+  "yaakSchema": 4,
+  "timestamp": "2025-09-26T04:44:41.641500900",
+  "resources": {
+    "workspaces": [
+      {
+        "model": "workspace",
+        "id": "wk_DokBuBvSo6",
+        "createdAt": "2025-09-25T22:01:52.816286300",
+        "updatedAt": "2025-09-25T22:01:52.816287",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Backend",
+        "encryptionKeyChallenge": null,
+        "settingValidateCertificates": true,
+        "settingFollowRedirects": true,
+        "settingRequestTimeout": 0
+      }
+    ],
+    "environments": [
+      {
+        "model": "environment",
+        "id": "ev_Qat3Qz6NvS",
+        "workspaceId": "wk_DokBuBvSo6",
+        "createdAt": "2025-09-25T22:02:12.450400400",
+        "updatedAt": "2025-09-25T22:02:52.970966800",
+        "name": "dev",
+        "public": false,
+        "base": false,
+        "variables": [
+          {
+            "enabled": true,
+            "name": "baseURL",
+            "value": "http://localhost:3333/api/v1",
+            "id": "Guueukna7N"
+          }
+        ],
+        "color": null
+      },
+      {
+        "model": "environment",
+        "id": "ev_6GUAPfyRUS",
+        "workspaceId": "wk_DokBuBvSo6",
+        "createdAt": "2025-09-25T22:01:52.873425900",
+        "updatedAt": "2025-09-25T22:01:52.873427",
+        "name": "Global Variables",
+        "public": false,
+        "base": true,
+        "variables": [],
+        "color": null
+      }
+    ],
+    "folders": [],
+    "httpRequests": [
+      {
+        "model": "http_request",
+        "id": "rq_PCeDYwri9t",
+        "createdAt": "2025-09-26T04:13:10.182316500",
+        "updatedAt": "2025-09-26T04:41:57.438257500",
+        "workspaceId": "wk_DokBuBvSo6",
+        "folderId": null,
+        "authentication": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlN2MwMTExMS02ZTY3LTQzMWMtYmJhMy0yNTQ0OGNlNmVhMmQiLCJpYXQiOjE3NTg4NjE3MTAsImV4cCI6MTc1ODg2NTMxMH0.J7HU_pnZDOL661sM0EG4VnkugcgpbIq7BG9jjxCR6so"
+        },
+        "authenticationType": "bearer",
+        "body": {
+          "text": "{\n  \"email\":\"john3@snow.com\",\n  \"password\": \"123123123\"\n}"
+        },
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "me",
+        "sortPriority": -1758837718526.998,
+        "url": "${[ baseURL ]}/me",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_HhEWQezM5J",
+        "createdAt": "2025-09-26T03:59:40.677396900",
+        "updatedAt": "2025-09-26T04:41:12.141706300",
+        "workspaceId": "wk_DokBuBvSo6",
+        "folderId": null,
+        "authentication": {},
+        "authenticationType": "none",
+        "body": {
+          "text": "{\n  \"email\":\"john@snow.com\",\n  \"password\": \"super.senha\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "gckxQfrIFS"
+          }
+        ],
+        "method": "POST",
+        "name": "login",
+        "sortPriority": -1758837718526.999,
+        "url": "${[ baseURL ]}/login",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_eEvfa7cePW",
+        "createdAt": "2025-09-25T22:01:58.531235",
+        "updatedAt": "2025-09-26T04:41:44.444908600",
+        "workspaceId": "wk_DokBuBvSo6",
+        "folderId": null,
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"name\": \"John Snow\",\n  \"email\":\"john@snow.com\",\n  \"password\": \"super.senha\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "gckxQfrIFS"
+          }
+        ],
+        "method": "POST",
+        "name": "register",
+        "sortPriority": -1758837718527.0,
+        "url": "${[ baseURL ]}/register",
+        "urlParameters": []
+      }
+    ],
+    "grpcRequests": [],
+    "websocketRequests": []
+  }
+}
