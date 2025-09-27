@@ -1,0 +1,7 @@
+backend-api/.env
+backend-api/node_modules/
+backend-api/.vscode
+
+frontend-login/.env
+frontend-login/node_modules/
+frontend-login/.vscode/
