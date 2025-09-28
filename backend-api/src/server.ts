@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin: 'http://127.0.0.1:5173', // Substitua pela URL do seu frontend
+    origin: process.env.URL_APP, // Substitua pela URL do seu frontend
   }
 ));
 

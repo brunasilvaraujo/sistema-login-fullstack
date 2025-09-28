@@ -1,10 +1,7 @@
 import { defineStore } from 'pinia'
 import axios, { AxiosError } from 'axios'
 import { api } from '@/lib/axios'
-import type { User, UserRegistrationData, UserLoginData, AuthResponse, AuthState } from '@/types/auth'
-
-
-const API_BASE_URL = 'http://localhost:3333/api/v1'
+import type { User, UserRegistrationData, UserLoginData } from '@/types/auth'
 
 // Configurar axios para incluir token automaticamente
 axios.interceptors.request.use(

@@ -80,7 +80,7 @@ const form = reactive<UserRegistrationData>({
 
 async function handleRegister() {
   await authStore.register(form);
-  if (authStore.user) {
+  if (authStore.isAuthenticated) {
     router.push("/login");
     return;
   }
