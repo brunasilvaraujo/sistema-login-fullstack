@@ -9,7 +9,7 @@ Um sistema completo de autenticação com frontend em Vue.js 3 e backend em Node
 - **Node.js** com **TypeScript**
 - **Express.js** - Framework web
 - **Sequelize** - ORM para banco de dados
-- **PostgreSQL** - Banco de dados
+- **MySQL** - Banco de dados
 - **JWT** - Autenticação via tokens
 - **Bcrypt** - Hash de senhas
 - **Docker** - Containerização
