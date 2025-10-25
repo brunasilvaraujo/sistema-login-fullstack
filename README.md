@@ -103,7 +103,7 @@ O frontend estará rodando em `http://localhost:5173`
 - ✅ **Perfil do usuário** - Visualização de dados do usuário logado
 - ✅ **Hash de senhas** - Segurança com bcrypt
 - ✅ **Validação de dados** - Middleware de validação
-- ✅ **Banco de dados** - PostgreSQL com Sequelize ORM
+- ✅ **Banco de dados** - MySQL com Sequelize ORM
 
 ## 📚 Scripts Disponíveis
 
